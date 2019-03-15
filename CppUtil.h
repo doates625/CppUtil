@@ -6,3 +6,7 @@
 
 float clamp_limit(float val, float val_min, float val_max);
 float mod_limit(float val, float val_min, float val_max);
+float fadd(float a, float b);
+float fsub(float a, float b);
+float fmul(float a, float b);
+float fdiv(float a, float b);

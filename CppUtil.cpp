@@ -34,3 +34,35 @@ float mod_limit(float val, float val_min, float val_max)
 {
 	return fmod(val - val_min, val_max - val_min) + val_min;
 }
+
+/**
+ * @brief Named function for float addition (a + b).
+ */
+float fadd(float a, float b)
+{
+	return a + b;
+}
+
+/**
+ * @brief Named function for float subtraction (a - b).
+ */
+float fsub(float a, float b)
+{
+	return a - b;
+}
+
+/**
+ * @brief Named function for float multiplication (a * b).
+ */
+float fmul(float a, float b)
+{
+	return a * b;
+}
+
+/**
+ * @brief Named function for float division (a / b).
+ */
+float fdiv(float a, float b)
+{
+	return a / b;
+}
