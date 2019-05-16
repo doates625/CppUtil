@@ -39,8 +39,8 @@ public:
 	{
 		this->is_new = sp_not_new;
 		this->is_array = sp_not_array;
-		this->ref_count_ptr = NULL;
-		this->val_ptr = NULL;
+		this->ref_count_ptr = 0;
+		this->val_ptr = 0;
 	}
 
 	/**
@@ -147,10 +147,10 @@ private:
 	}
 
 	/** Flag for dynamic memory */
-	sp_newflag_t is_new = sp_not_new;
+	sp_newflag_t is_new;
 
 	/** Flag for pointers to arrays */
-	sp_arrayflag_t is_array = sp_not_array;
+	sp_arrayflag_t is_array;
 
 	/** Pointer to reference counter */
 	uint32_t* ref_count_ptr;
