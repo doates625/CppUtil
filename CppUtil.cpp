@@ -66,3 +66,19 @@ float fdiv(float a, float b)
 {
 	return a / b;
 }
+
+/**
+ * @brief Returns smaller of a or b.
+ */
+int min(int a, int b)
+{
+	return (a < b) ? a : b;
+}
+
+/**
+ * @brief Returns larger of a or b.
+ */
+int max(int a, int b)
+{
+	return (a > b) ? a : b;
+}
