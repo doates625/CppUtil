@@ -11,6 +11,7 @@ float fadd(float a, float b);
 float fsub(float a, float b);
 float fmul(float a, float b);
 float fdiv(float a, float b);
+float fsq(float n);
 
 // Integer Operations
 int min(int a, int b);

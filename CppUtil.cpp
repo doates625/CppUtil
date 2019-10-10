@@ -6,7 +6,7 @@
 #include <math.h>
 
 /**
- * @brief Limits val to range [val_min, val_max].
+ * @brief Limits val to range [val_min, val_max]
  * @param val Input value
  * @param val_min Minimum value
  * @param val_max Maximum value
@@ -36,7 +36,7 @@ float mod_limit(float val, float val_min, float val_max)
 }
 
 /**
- * @brief Named function for float addition (a + b).
+ * @brief Named function for float addition (a + b)
  */
 float fadd(float a, float b)
 {
@@ -44,7 +44,7 @@ float fadd(float a, float b)
 }
 
 /**
- * @brief Named function for float subtraction (a - b).
+ * @brief Named function for float subtraction (a - b)
  */
 float fsub(float a, float b)
 {
@@ -52,7 +52,7 @@ float fsub(float a, float b)
 }
 
 /**
- * @brief Named function for float multiplication (a * b).
+ * @brief Named function for float multiplication (a * b)
  */
 float fmul(float a, float b)
 {
@@ -60,7 +60,7 @@ float fmul(float a, float b)
 }
 
 /**
- * @brief Named function for float division (a / b).
+ * @brief Named function for float division (a / b)
  */
 float fdiv(float a, float b)
 {
@@ -68,7 +68,15 @@ float fdiv(float a, float b)
 }
 
 /**
- * @brief Returns smaller of a or b.
+ * @brief Squares floating-point input n
+ */
+float fsq(float n)
+{
+	return n * n;
+}
+
+/**
+ * @brief Returns smaller of a or b
  */
 int min(int a, int b)
 {
@@ -76,7 +84,7 @@ int min(int a, int b)
 }
 
 /**
- * @brief Returns larger of a or b.
+ * @brief Returns larger of a or b
  */
 int max(int a, int b)
 {
