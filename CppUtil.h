@@ -12,6 +12,9 @@ float fsub(float a, float b);
 float fmul(float a, float b);
 float fdiv(float a, float b);
 float fsq(float n);
+float mean(float arr[], uint32_t len);
+float var(float arr[], float mean, uint32_t len);
+float std(float arr[], float mean, uint32_t len);
 
 // Integer Operations
 int min(int a, int b);

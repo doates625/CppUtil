@@ -76,6 +76,48 @@ float fsq(float n)
 }
 
 /**
+ * @brief Computes arithmetic mean of array
+ * @param arr Array of numbers
+ * @param len Length of array
+ */
+float mean(float arr[], uint32_t len)
+{
+	float sum = 0.0f;
+	for (uint32_t i = 0; i < len; i++)
+	{
+		sum += arr[i];
+	}
+	return sum / len;
+}
+
+/**
+ * @brief Computes variance of array given the mean
+ * @param arr Array of numbers
+ * @param mean Mean of array
+ * @param len Length of array
+ */
+float var(float arr[], float mean, uint32_t len)
+{
+	float sum = 0.0f;
+	for (uint32_t i = 0; i < len; i++)
+	{
+		sum += fsq(arr[i] - mean);
+	}
+	return sum / len;
+}
+
+/**
+ * @brief Computes standard deviation of array given the mean
+ * @param arr Array of numbers
+ * @param mean Mean of array
+ * @param len Length of array
+ */
+float std(float arr[], float mean, uint32_t len)
+{
+	return sqrtf(var(arr, mean, len));
+}
+
+/**
  * @brief Returns smaller of a or b
  */
 int min(int a, int b)
