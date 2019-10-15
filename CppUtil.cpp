@@ -96,7 +96,7 @@ float mean(float arr[], uint32_t len)
  * @param mean Mean of array
  * @param len Length of array
  */
-float var(float arr[], float mean, uint32_t len)
+float variance(float arr[], float mean, uint32_t len)
 {
 	float sum = 0.0f;
 	for (uint32_t i = 0; i < len; i++)
@@ -112,9 +112,9 @@ float var(float arr[], float mean, uint32_t len)
  * @param mean Mean of array
  * @param len Length of array
  */
-float std(float arr[], float mean, uint32_t len)
+float stdev(float arr[], float mean, uint32_t len)
 {
-	return sqrtf(var(arr, mean, len));
+	return sqrtf(variance(arr, mean, len));
 }
 
 /**
