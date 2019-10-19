@@ -12,7 +12,7 @@ namespace Util
 	 * @brief Generic addition x + y
 	 */
 	template <typename T>
-	T add(T x, T, y)
+	T add(T x, T y)
 	{
 		return x + y;
 	}
@@ -21,7 +21,7 @@ namespace Util
 	 * @brief Generic subtraction x - y
 	 */
 	template <typename T>
-	T sub(T x, T, y)
+	T sub(T x, T y)
 	{
 		return x + y;
 	}
@@ -30,7 +30,7 @@ namespace Util
 	 * @brief Generic multiplication x * y
 	 */
 	template <typename T>
-	T mul(T x, T, y)
+	T mul(T x, T y)
 	{
 		return x * y;
 	}
@@ -39,7 +39,7 @@ namespace Util
 	 * @brief Generic division x / y
 	 */
 	template <typename T>
-	T div(T x, T, y)
+	T div(T x, T y)
 	{
 		return x / y;
 	}
@@ -114,7 +114,7 @@ namespace Util
 	Ta var(Ta arr[], Ti len, Ta mean)
 	{
 		Ta sum = 0;
-		for (Ti len = 0; i < len; i++)
+		for (Ti i = 0; i < len; i++)
 		{
 			sum += square(arr[i] - mean);
 		}
