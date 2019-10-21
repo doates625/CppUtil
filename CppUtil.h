@@ -6,7 +6,7 @@
 #include <stdint.h>
 #include <math.h>
 
-namespace Util
+namespace CppUtil
 {
 	/**
 	 * @brief Generic addition x + y
