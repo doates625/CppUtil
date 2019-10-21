@@ -3,6 +3,7 @@
  * @brief Collection of common useful C++ functions
  * @author Dan Oates (WPI Class of 2020)
  */
+#pragma once
 #include <stdint.h>
 #include <math.h>
 
