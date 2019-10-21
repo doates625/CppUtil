@@ -84,10 +84,7 @@ namespace CppUtil
 	/**
 	 * @brief Wrap (modulo) limits x to range [x_min, x_max]
 	 */
-	float wrap(float x, float x_min, float x_max)
-	{
-		return fmod(x - x_min, x_max - x_min) + x_min;
-	}
+	float wrap(float x, float x_min, float x_max);
 
 	/**
 	 * Generic array mean
