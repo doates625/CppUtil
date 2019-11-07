@@ -87,7 +87,74 @@ namespace CppUtil
 	float wrap(float x, float x_min, float x_max);
 
 	/**
-	 * Generic array mean
+	 * @brief Finds index of first occurrence of val in arr
+	 * @param arr Array of data
+	 * @param val Value to find (with ==)
+	 * @param len Length of array
+	 * @param found False if value was not found
+	 */
+	template <typename Ta, typename Ti>
+	Ti find(Ta arr[], Ta val, Ti len, bool& found)
+	{
+		// Search arr for val
+		for (Ti i = 0; i < len; i++)
+		{
+			if (arr[i] == val)
+			{
+				found = true;
+				return i;
+			}
+		}
+
+		// If not found
+		found = false;
+		return 0;
+	}
+
+	/**
+	 * @brief Finds index of min of array
+	 * @param arr Array of comparable type
+	 * @param len Length of array
+	 */
+	template <typename Ta, typename Ti>
+	Ti arg_min(Ta arr[] Ti len)
+	{
+		Ta arr_min = arr[0];
+		Ti i_min = 0;
+		for (Ti i = 1; i < len; i++)
+		{
+			if (arr[i] < arr_min)
+			{
+				arr_min = arr[i];
+				i_min = i;
+			}
+		}
+		return i_min;
+	}
+
+	/**
+	 * @brief Finds index of max of array
+	 * @param arr Array of comparable type
+	 * @param len Length of array
+	 */
+	template <typename Ta, typename Ti>
+	Ti arg_max(Ta arr[] Ti len)
+	{
+		Ta arr_max = arr[0];
+		Ti i_max = 0;
+		for (Ti i = 1; i < len; i++)
+		{
+			if (arr[i] > arr_max)
+			{
+				arr_max = arr[i];
+				i_max = i;
+			}
+		}
+		return i_max;
+	}
+
+	/**
+	 * @brief Generic array mean
 	 * @param arr Array of data
 	 * @param len Length of array
 	 */
