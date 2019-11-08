@@ -117,7 +117,7 @@ namespace CppUtil
 	 * @param len Length of array
 	 */
 	template <typename Ta, typename Ti>
-	Ti arg_min(Ta arr[] Ti len)
+	Ti arg_min(Ta arr[], Ti len)
 	{
 		Ta arr_min = arr[0];
 		Ti i_min = 0;
@@ -138,7 +138,7 @@ namespace CppUtil
 	 * @param len Length of array
 	 */
 	template <typename Ta, typename Ti>
-	Ti arg_max(Ta arr[] Ti len)
+	Ti arg_max(Ta arr[], Ti len)
 	{
 		Ta arr_max = arr[0];
 		Ti i_max = 0;
