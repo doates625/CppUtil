@@ -1,6 +1,6 @@
 /**
  * @file CppUtil.h
- * @brief Collection of common useful C++ functions
+ * @brief Collection of commonly-used C++ functions
  * @author Dan Oates (WPI Class of 2020)
  */
 #pragma once
