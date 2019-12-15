@@ -9,5 +9,7 @@
  */
 float CppUtil::wrap(float x, float x_min, float x_max)
 {
-	return fmod(x - x_min, x_max - x_min) + x_min;
+	return
+	    x > x_max ? fmod(x - x_min, x_max - x_min) + x_min :
+	    x < x_min ? fmod(x - x_min, x_max - x_min) - x_min : x;
 }
