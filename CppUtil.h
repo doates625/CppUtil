@@ -49,7 +49,7 @@ namespace CppUtil
 	 * @brief Generic square x^2
 	 */
 	template <typename T>
-	T square(T x)
+	T sq(T x)
 	{
 		return x * x;
 	}
