@@ -201,7 +201,7 @@ Ta CppUtil::var(Ta arr[], Ti len, Ta mean)
 	Ta sum = 0;
 	for (Ti i = 0; i < len; i++)
 	{
-		sum += square(arr[i] - mean);
+		sum += sqa(arr[i] - mean);
 	}
 	return sum / len;
 }
